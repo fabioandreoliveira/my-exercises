@@ -1,5 +1,7 @@
 package io.codeforall.fanstatics;
 
+import io.codeforall.fanstatics.hero.Hero;
+
 public interface Ability {
-    void use(Hero target);
+    public void use(Hero source, Hero target);
 }

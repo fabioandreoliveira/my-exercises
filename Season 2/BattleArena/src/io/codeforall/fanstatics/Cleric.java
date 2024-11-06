@@ -1,7 +1,10 @@
-package io.codeforall.fanstatics;
+package io.codeforall.fanstatics.hero;
 
-public class Cleric extends Hero {
-    public Cleric(String name, int health, int mana) {
-        super(name, health, mana);
+import io.codeforall.fanstatics.ability.Heal;
+
+public class Cleric extends io.codeforall.fanstatics.hero.Hero {
+    public Cleric(String name){
+        super("Cleric", name);
+        this.setAbility(new Heal("Heal"));
     }
 }

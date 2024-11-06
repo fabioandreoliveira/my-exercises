@@ -1,19 +1,18 @@
 package io.codeforall.fanstatics;
 
+import io.codeforall.fanstatics.hero.Cleric;
+import io.codeforall.fanstatics.hero.Mage;
+import io.codeforall.fanstatics.hero.Rogue;
+import io.codeforall.fanstatics.hero.Warrior;
+
 public class Main {
     public static void main(String[] args) {
-        Arena arena = new Arena();
-
-        Hero mage = new Mage("Gandalf", 100, 50);
-        Hero warrior = new Warrior("Conan", 100, 30);
-        Hero cleric = new Cleric("Elena", 100, 35);
-        Hero rogue = new Rogue("Robin", 100, 40);
-
-        arena.addHero(mage);
-        arena.addHero(warrior);
-        arena.addHero(cleric);
-        arena.addHero(rogue);
-
-        arena.startBattle();
+        Arena arena = new Arena(
+                new Cleric("Bishop"),
+                new Mage("Gandalf"),
+                new Rogue("Deadpool"),
+                new Warrior("Wolverine")
+        );
+        arena.start(5);
     }
 }
