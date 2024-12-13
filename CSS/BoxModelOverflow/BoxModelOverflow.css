@@ -1,0 +1,125 @@
+.box1 {
+  width: 200px;              
+  height: 150px;
+  margin-right: auto;              
+  background-color: green;   
+  padding: 20px;              
+  border: 5px solid black;    
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-shadow: 0 0 0 30px rgb(222, 131, 41);
+  position: relative;
+}
+
+.box2 {
+  width: 200px;               
+  height: 150px;
+  margin-right: auto;              
+  background-color: green;    
+  padding: 20px;              
+  border: 5px solid black;    
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-shadow: 0 0 0 30px rgb(222, 131, 41);
+  position: relative;            
+}
+
+.box3 {
+  width: 200px;               
+  height: 150px;
+  margin-right: auto;              
+  background-color: green;    
+  padding: 20px;              
+  border: 5px solid black;    
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-shadow: 0 0 0 30px rgb(222, 131, 41);
+  position: relative;            
+}
+
+.box-content1 {
+  height: 20px;
+  width: 100px;
+  display: inline-block;
+  background-color:  white;
+  text-align: center;
+  overflow: visible;
+}
+
+.box-content2 {
+  height: 20px;
+  width: 100px;
+  display: inline-block;
+  background-color:  white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.box-content3 {
+  height: 20px;
+  width: 100px;
+  display: inline-block;
+  background-color:  white;
+  text-align: center;
+  overflow: scroll;
+}
+
+.boxpadding {
+  background-color: green;
+  margin-left: 400px;
+  text-align: center;
+  display: inline-block;
+  border: 15px;
+}
+
+.boxmargin {
+background-color: rgb(222, 131, 41);
+text-align: center;
+display: inline-block;
+}
+
+.boxborder {
+  border: 5px solid black;
+  display: inline-block;
+}
+
+.bigbox {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  font-size: 20px;
+  flex-wrap: wrap;
+  align-items:center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 50; /* Ensure it's above other elements */
+}
+
+.box1::before, .box2::before, .box3::before {
+  content: "Overflow: visible (defaut)";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}

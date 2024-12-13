@@ -1,0 +1,45 @@
+body {
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px; /* Garante espaço ao reduzir a janela */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* O container ocupa a largura total */
+    max-width: 600px; /* Define uma largura máxima para manter o layout legível */
+    box-sizing: border-box; /* Inclui padding na largura */
+}
+
+img {
+    max-width: 100%; /* Redimensiona a imagem para caber no container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF; /* Azul para os links */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}

@@ -1,0 +1,51 @@
+.box {
+  width: 200px;               /* Largura da caixa */
+  height: 150px;
+  margin-right: auto;              /* Altura da caixa */
+  background-color: green;    /* Cor do conteúdo */
+  padding: 20px;              /* Espaço interno (padding) */
+  border: 5px solid black;    /* Borda preta com 5px */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-shadow: 0 0 0 30px rgb(222, 131, 41);             /* Espaço externo (margin) */
+}
+
+.box2 {
+  height: 20px;
+  width: 100px;
+  display: inline-block;
+  background-color:  white;
+  text-align: center;
+  overflow: visible;
+}
+
+.boxpadding {
+  background-color: green;
+  margin-left: 400px;
+  text-align: center;
+  display: inline-block;
+  border: 15px;
+}
+
+.boxmargin {
+background-color: rgb(222, 131, 41);
+text-align: center;
+display: inline-block;
+}
+
+.boxborder {
+  border: 5px solid black;
+  display: inline-block;
+}
+
+.bigbox {
+  width: 700px;
+  height: 300px;
+  background-color: white;
+  font-size: 20px;
+}
+
+
+
